@@ -42,8 +42,8 @@ function SuperHero(name, power) {
     };
   }
   
-  const ironman = new SuperHero ('Ironman', 'SUPERSTRENGH');
-  const venom = new SuperHero ('Venom', 'alien alterego');  
+  const ironman = new SuperHero ('Ironman', 'SUPERSUIT');
+  const venom = new SuperHero ('Venom', 'ALIEN ALTEREGO');  
   
   ironman.saveTheDay();
   venom.saveTheDay();
