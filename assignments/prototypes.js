@@ -34,7 +34,7 @@ function CharacterStats(attributes) {
   this.healthPoints = attributes.healthPoints;
   GameObject.call(this, attributes);
 }
-CharacterStats.prototype.takeDamage= function() {
+CharacterStats.prototype.takeDamage = function() {
   return `${this.name} took damage.`
   
 }
@@ -135,5 +135,28 @@ Humanoid.prototype = Object.create(CharacterStats);
 
   // Stretch task: 
   // * Create Villain and Hero constructor functions that inherit from the Humanoid constructor function.  
+
+function SuperHero(attributes) {
+  this.power= attributes.power;
+  Humanoid.call(this, attributes);
+  }
+SuperHero.prototype.saveTheDay = function() {
+    console.log(`${this.name} has saved the day with his ${this.power}`);
+ 
+  }
+SuperHero.prototype = Object.create(Humanoid);
+
+
+function Villian(attributes) = {
+  name: "carnage";
+  Humanoid.call(this, attributes);
+}
+Villian.prototype.evilLaugh = function{
+  return `muahhahahaha ITS ME ${this.name}`;
+}
+Villian.prototype = Object.create(Humanoid);
+
+console.log(SuperHero);
+console.log(Villian);
   // * Give the Hero and Villains different methods that could be used to remove health points from objects which could result in destruction if health gets to 0 or drops below 0;
   // * Create two new objects, one a villain and one a hero and fight it out with methods!
