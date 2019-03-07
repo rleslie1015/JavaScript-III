@@ -45,8 +45,8 @@ function SuperHero(name, power) {
   const ironman = new SuperHero ('Ironman', 'SUPERSUIT');
   const venom = new SuperHero ('Venom', 'ALIEN ALTEREGO');  
   
-  ironman.saveTheDay();
-  venom.saveTheDay();
+ironman.saveTheDay();
+venom.saveTheDay();
 // Principle 4
 
 // code example for Explicit Binding
