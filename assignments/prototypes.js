@@ -59,7 +59,7 @@ CharacterStats.prototype.takeDamage = function() {
    CharacterStats.call(this, humattributes);
    this.team = humattributes.team;
    this.weapons = humattributes.weapons;
-   this.language = humattributes.langauge;
+   this.language = humattributes.language;
  
  }
 
